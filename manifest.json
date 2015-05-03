@@ -1,0 +1,27 @@
+{
+	"name": "Anthropologie Product Template Generator",
+	"short_name": "Anthro Listing Template",
+	"version": "0.1",
+	"manifest_version": 2,
+  "background": {
+    "scripts": ["src/background.js"]
+  },
+	"page_action": {
+		"default_icon": "icon_16.png",
+    "default_title": "Generate template from product"
+	},
+	"content_scripts": [{
+		"matches": [
+			"http://www.anthropologie.com/anthro/product/*",
+      "http://us.anthropologie.com/anthro/pdp/*"
+		],
+		"js": [
+      "src/jquery.min.js",
+      "src/content.js"]
+	}],
+	"permissions": [
+		"http://www.anthropologie.com/anthro/*",
+    "http://us.anthropologie.com/anthro/*",
+    "declarativeContent"
+	]
+}

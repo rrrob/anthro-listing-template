@@ -1,0 +1,46 @@
+<br style="display: none">
+<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Playball">
+<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Nunito">
+<div style="letter-spacing:1;color:#5c5c5f;font-family:georgia,serif;padding-left: 30px; background-image: url(http://www.anthropologie.com/anthro/images/2014/bg-main.jpg);">
+<div style="background: url(http://www.anthropologie.com/anthro/images/paper_logo_081213-opt.png) no-repeat center; height: 50px;"></div>
+<h1 style="display: inline-block; margin: 25px 10px 0 0; font-family: georgia; text-shadow: 3px 3px 3px #aaa; font-size: 1.8em; line-height: 1; font-weight:400;color: #5c5c5f">{{name}}</h1>
+<span style="color: #5d9ab2;font-family: 'Nunito',georgia;font-size:13px;">{{designer}}</span>
+<div style="font-family: 'Nunito', georgia;margin: 8px 5px 30px 10px;color: #5c5c5f;font-weight: 400;font-size: 14px;">{{desc}}</div>
+<div style="padding-left: 5px;">
+<span style="color: #5c5c5f; font-weight: 400;">CONDITION:</span><span style="font-family:'Nunito',georgia;margin-left:10px; background-color: floralwhite; padding:0 5px;color: #5c5c5f;">New With Tags In Package</span>
+<span style="margin-left: 50px;color: #5c5c5f;font-weight: 400;">SIZE:</span><span style="font-family: 'Nunito',georgia; margin-left: 10px; background-color: floralwhite; padding: 0 5px;color: #5c5c5f;">M</span>
+<span style="margin-left: 50px; color: #5c5c5f">COLOR:</span>&nbsp;<span style="font-family: 'Nunito';padding: 0 5px;color: #5c5c5f;">{{color}}</span>
+<span style="margin-left: 50px; color: #5c5c5f">RETAIL PRICE:</span>
+<span style="font-family: 'Playball', cursive; padding: 0 5px;color: #5c5c5f;font-weight: 600;">{{price}}</span>
+</div>
+
+<div style="height:450px;padding-left:5px;">
+<div style="width: 400px;float:left;margin-right:75px;">
+<div style="margin-top:40px ;color: #05728c;">DETAILS</div>
+<div style="background: url(http://www.anthropologie.com/anthro/images/2014/dropdown-panel-tile.jpg) center;margin-top: 15px; padding-top: 20px;padding-bottom: 30px;box-shadow: 0 1px 6px -2px rgba(50,50,50,.3);height:250px">
+<ul style=" font-family: 'Nunito', georgia; font-size: 12px; color: #5c5c5f;">
+{{#each details}}
+  <li>{{this}}</li>
+{{/each}}
+</ul>
+</div>
+</div>
+
+{{#if dims}}
+<div style="width: 425px;float:left">
+<div style="margin-top:40px ;color: #05728c;">DIMENSIONS</div>
+<div style="background: url(http://www.anthropologie.com/anthro/images/2014/dropdown-panel-tile.jpg) center;width: 400px; box-shadow: 0 1px 6px -2px rgba(50,50,50,.3); margin-top: 15px; padding-top: 20px;padding-bottom: 30px;box-shadow: 0 1px 6px -2px rgba(50,50,50,.3);height:250px;">
+<ul style=" font-family: 'Nunito', georgia; font-size: 12px; color: #5c5c5f;">
+{{#each dims}}
+  <li>{{this}}</li>
+{{/each}}
+</ul>
+</div>
+</div>
+</div>
+{{/if}}
+
+</div>
+<br>
+<br>
+<br></div></div>

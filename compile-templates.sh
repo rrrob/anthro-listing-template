@@ -1,0 +1,1 @@
+handlebars listing.handlebars -f src/templates.js
